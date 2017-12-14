@@ -1,5 +1,5 @@
 # Variables
-$src_basedir=/opt/david/pac/pac
+$src_basedir=/var/tmp/pacbuild/pac
 $src_libdir=${src_basedir}/lib
 $src_resdir=${src_basedir}/res
 $src_utilsdir=${src_basedir}/utils
@@ -33,7 +33,7 @@ $icondir=/usr/share/pixmaps
 %description deb http://archive.getdeb.net/ubuntu <your_distrib_name_here>-getdeb apps
 %description .
 %description (Or visit: http://www.getdeb.net to get further info and software)
-%version 4.5.5.8
+%version 4.5.5.7
 %requires perl
 %requires gtk2-engines-pixbuf
 %requires libvte9
@@ -92,20 +92,20 @@ f 644 root root ${dest_libdir}/PACKeePass.pm ${src_libdir}/PACKeePass.pm nostrip
 f 644 root root ${dest_libdir}/ex/KeePass.pm ${src_libdir}/ex/KeePass.pm nostrip()
 f 644 root root ${dest_libdir}/ex/PACTree.pm ${src_libdir}/ex/PACTree.pm nostrip()
 f 644 root root ${dest_libdir}/ex/TiedTree.pm ${src_libdir}/ex/TiedTree.pm nostrip()
-f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.000 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.000 nostrip()
-f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.014 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.014 nostrip()
-f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.016 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.016 nostrip()
-f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.018 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.018 nostrip()
-f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.020 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.020 nostrip()
-f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.000 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.000 nostrip()
-f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.014 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.014 nostrip()
-f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.016 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.016 nostrip()
-f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.018 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.018 nostrip()
-f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.020 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.020 nostrip()
-f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.022 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.022 nostrip()
-f 644 root root ${dest_libdir}/ex/vteARM/auto/Gnome2/Vte/Vte.o ${src_libdir}/ex/vteARM/auto/Gnome2/Vte/Vte.o nostrip()
-f 644 root root ${dest_libdir}/ex/vteARMV7L/auto/Gnome2/Vte/Vte.o ${src_libdir}/ex/vteARMV7L/auto/Gnome2/Vte/Vte.o nostrip()
-f 644 root root ${dest_libdir}/ex/vtePPC64/auto/Gnome2/Vte/Vte.so ${src_libdir}/ex/vtePPC64/auto/Gnome2/Vte/Vte.so nostrip()
+#f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.000 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.000 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.014 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.014 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.016 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.016 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.018 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.018 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.020 ${src_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_5.020 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.000 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.000 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.014 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.014 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.016 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.016 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.018 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.018 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.020 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.020 nostrip()
+#f 644 root root ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.022 ${src_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_5.022 nostrip()
+#f 644 root root ${dest_libdir}/ex/vteARM/auto/Gnome2/Vte/Vte.o ${src_libdir}/ex/vteARM/auto/Gnome2/Vte/Vte.o nostrip()
+#f 644 root root ${dest_libdir}/ex/vteARMV7L/auto/Gnome2/Vte/Vte.o ${src_libdir}/ex/vteARMV7L/auto/Gnome2/Vte/Vte.o nostrip()
+#f 644 root root ${dest_libdir}/ex/vtePPC64/auto/Gnome2/Vte/Vte.so ${src_libdir}/ex/vtePPC64/auto/Gnome2/Vte/Vte.so nostrip()
 
 f 644 root root ${dest_editdir}/PACExecEntry.pm ${src_editdir}/PACExecEntry.pm nostrip()
 f 644 root root ${dest_editdir}/PACExpectEntry.pm ${src_editdir}/PACExpectEntry.pm nostrip()
@@ -203,8 +203,8 @@ f 644 root root ${host_mandir}/pac.1 ${src_resdir}/pac.1 nostrip()
 set -e
 if [ "$$1" = "configure" ] && [ -x /usr/bin/update-menus ]; then update-menus ; fi
 if [ ! -f /etc/termcap ]; then cp ${dest_resdir}/termcap /etc/termcap ; fi
-rm -f ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so
-rm -f ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so
+#rm -f ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so
+#rm -f ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so
 if [ $$(perl -e "print ( $$] ge '5.022' ? '1' : '0' );") -eq "1" ]; then
 	ver="5.022"
 elif [ $$(perl -e "print ( $$] ge '5.020' ? '1' : '0' );") -eq "1" ]; then
@@ -219,12 +219,11 @@ else
 	ver="5.000"
 fi
 
-ln -s ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_$$ver ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so
-ln -s ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_$$ver ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so
+#ln -s ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so_32_$$ver ${dest_libdir}/ex/vte32/auto/Gnome2/Vte/Vte.so
+#ln -s ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so_64_$$ver ${dest_libdir}/ex/vte64/auto/Gnome2/Vte/Vte.so
 EOF
 
 %postremove <<EOF
 set -e
 if [ "$$1" = "configure" ] && [ -x /usr/bin/update-menus ]; then update-menus ; fi
 EOF
-
